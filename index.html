@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Transliterate</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+  <script src="js/config.js"></script>
+  <script type="module" src="js/script.js"></script>
+  <link href='css/styles.css' rel=stylesheet />
+</head>
+
+<body>
+  <header>
+    <h1><span>Steno</span><span>Guru</span></h1>
+  </header>
+  <main>
+    <h1>Translation</h1>
+    <form action="" method="get" id="translate">
+      <div class="menu">
+        <select name="lang" id="lang">
+          <option value="as">Assamese</option>
+          <option value="bn">Bengali</option>
+          <option value="bho">Bhojpuri</option>
+          <option value="en">English</option>
+          <option value="gu">Gujarati</option>
+          <option value="hi" selected>Hindi</option>
+          <option value="kn">Kannada</option>
+          <option value="ml">Malayalam</option>
+          <option value="mr">Marathi</option>
+          <option value="ne">Nepali</option>
+          <option value="or">Odia</option>
+          <option value="pa">Punjabi</option>
+          <option value="sa">Sanskrit</option>
+          <option value="ta">Tamil</option>
+          <option value="te">Telugu</option>
+        </select>
+        <button id='translateBtn'>Translate</button>
+        <button id='copy'>Copy</button>
+      </div>
+      <div class="display">
+        <textarea name="user_text" id="input" placeholder="Start typing"></textarea>
+      </div>
+    </form>
+    </p>
+  </main>
+  <footer></footer>
+</body>
+
+</html>

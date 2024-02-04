@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+:root {
+  --textarea-width: 500px;
+  --textarea-gap: 10px;
+  --default-font: "Inter Tight";
+  --base-clr: #5F4B66;
+  --second-clr: #E2DCE5;
+  --background-clr: #A7ADC6;
+}
+
+body {
+  min-height: 150vh;
+  background-color: var(--background-clr);
+  margin: 0;
+  font-family: var(--default-font);
+  display: grid;
+  grid-template: auto 1fr 1fr / 1fr 60vw 1fr;
+}
+
+main,
+footer {
+  grid-column: 2 / 3;
+}
+
+header {
+  font-family: var(--default-font);
+  color: white;
+  background-color: var(--base-clr);
+  padding: 30px 0px 140px;
+  grid-column: 1 / -1;
+}
+
+header>h1 {
+  font-size: 3.3rem;
+  font-family: "Playfair Display";
+  letter-spacing: -4px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  padding-left: calc(20vw + 9px);
+  margin: 0px 0px 8px;
+}
+
+header>h1>span:nth-child(2) {
+  margin: -30px 0px;
+}
+
+main {
+  background-color: white;
+  margin: -100px 0px;
+  padding: 20px 20px 50px;
+}
+
+main>h1 {
+  font-size: 2.1rem;
+  color: var(--base-clr);
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  margin-top: 5px;
+  transform: scale(1, 1.2);
+}
+
+.display {
+  display: flex;
+  gap: var(--textarea-gap);
+}
+
+.display>textarea {
+  width: var(--textarea-width);
+  height: calc(var(--textarea-width) / 1.5);
+  resize: none;
+  overflow-y: auto;
+  font-family: var(--default-font);
+  font-size: 1.2rem;
+  flex: 1 1 auto;
+  padding: 10px;
+  outline-color: var(--base-clr);
+}
+
+footer {
+  min-height: 10rem;
+  background-color: var(--base-clr);
+  padding: 50px;
+  margin: 100px 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu>select#lang,
+.menu>button {
+  margin-bottom: 10px;
+  padding: 12px 4px;
+  background-color: var(--second-clr);
+  color: var(--base-clr);
+  outline-color: var(--second-clr);
+  font-size: .9rem;
+  cursor: pointer;
+  border-color: var(--second-clr);
+  transition: all 150ms ease-out;
+}
+
+.menu>button {
+  border-style: solid;
+  border-color: var(--second-clr);
+  background-color: var(--second-clr);
+  color: var(--base-clr);
+  padding: 12px 8px;
+  min-width: 76px;
+}
+
+.menu>button:hover {
+  border-color: var(--base-clr);
+  background-color: var(--base-clr);
+  color: var(--second-clr);
+}
+
+
+#input {
+  outline-color: var(--base-clr);
+}
+
