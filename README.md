@@ -8,7 +8,7 @@ This is a webapp that allows you to translate your text from *English language* 
 It uses google's api to translate languages.
 
 # How TO USE
-You will have to user your own api key for this to work.
+You will have to use your own api key for this to work.
 You can add your api key by following these steps:
 - Go to js folder
 - Open sample-config.js
